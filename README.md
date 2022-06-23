@@ -16,10 +16,3 @@ Here you will find various examples for high-level users.
 | low_power_delay | Implementation of a delay that puts the board to sleep for a specified amount of time in seconds. Very useful for low-energy applications if one block of code needs to be run periodically. |
 |                 |                                                                                                                                                                                              |
 |                 |                                                                                                                                                                                              | 
-
-
-## Tests
-
-There is a couple of tests for the FrontEnd:
-
-Run __php artisan test__
