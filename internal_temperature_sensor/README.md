@@ -9,6 +9,6 @@ The application uses LowPower files (LowPower.cpp and LowPower.h, combined size 
 ## Service Info
 
 ```
-Sketch uses 1010 bytes (3%) of program storage space. Maximum is 32256 bytes.
-Global variables use 11 bytes (0%) of dynamic memory, leaving 2037 bytes for local variables. Maximum is 2048 bytes.
+Sketch uses 3328 bytes (10%) of program storage space. Maximum is 32256 bytes.
+Global variables use 200 bytes (9%) of dynamic memory, leaving 1848 bytes for local variables. Maximum is 2048 bytes.
 ```
