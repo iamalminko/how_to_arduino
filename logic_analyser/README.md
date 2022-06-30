@@ -31,7 +31,7 @@ directory.
 
 You should get a plot like this:
 
-![Serial comm output](../resources/serial_plot_my_array.jpg?raw=true "Serial plot: my_array")
+![Serial comm output](/../resources/serial_plot_my_array.jpg?raw=true "Serial plot: my_array")
 
 
 ## Service Info
