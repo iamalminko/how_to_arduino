@@ -22,7 +22,7 @@ On your host/desktop machine run "python logic_analyzer.py" in the "logic_analyz
 
 You should get a plot like this:
 
-![Serial comm output](https://raw.github.com/iamalminko/how_to_arduino/tree/master/resources/serial_plot_my_array.png "Serial plot: my_array")
+![Serial comm output](https://raw.githubusercontent.com/iamalminko/how_to_arduino/master/resources/serial_plot_my_array.png "Serial plot: my_array")
 
 
 ## Service Info
