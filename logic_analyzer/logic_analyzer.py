@@ -13,6 +13,28 @@ def write_read(serial_port, x):
     data = serial_port.readline()
     return data
 
+# Optional function - not part of logic analyzer functionality
+# Gets arrays of timestamps and values 0,1
+# Converts these arrays to binary sequence
+def A_D_conversion(x, y):
+	min_diff = x[1] - x[0]
+	for i in range(1, len(x)):
+		if x[i]-x[i-1] < min_diff:
+			min_diff = x[i]-x[i-1]
+	print(min_diff)
+
+	binary = []
+	for i in range(1, len(x)):
+		diff = x[i] - x[i-1]
+		periods = diff/min_diff
+
+		for j in range(int(periods)):
+			binary.append(y[i-1])
+			print(y[i-1], end='')
+	print("\n")
+	return binary
+
+
 # Global variables
 line = b''
 arr = []
@@ -54,6 +76,9 @@ x, y = zip(*arr) # separate pairs into two arrays
 # this makes time on the plot start at 0 and not with some 6-digit number
 ref = x[0]
 x = [a - ref for a in x]
+
+# A/D conversion
+#A_D_conversion(x, y)
 
 # You can also invert the binary array
 # That makes 1 high and 0 low

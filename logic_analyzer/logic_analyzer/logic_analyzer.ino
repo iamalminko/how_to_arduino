@@ -15,10 +15,6 @@ void setup() {
   pinMode(10, INPUT);
   state = digitalRead(10);
   //state = 0;
-
-  // Debug LED
-  pinMode(3, OUTPUT);
-  digitalWrite(3, LOW);
 }
 
 void loop() {
@@ -37,7 +33,6 @@ void loop() {
   {
     if(Serial.read() == 'G')
     {
-      digitalWrite(3, !digitalRead(3));
       for(int i=0; i<index; i++)
       {      
         Serial.print(timestamps[i]);
