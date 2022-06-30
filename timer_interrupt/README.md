@@ -11,8 +11,10 @@ Uno has 3 timers:
 * timer1 - 16bit (65535 ticks)
 * timer2 - 8bit (255 ticks)
 
-This example uses timer1 because timer0 and timer2 are very short and their full cycle can't be noticed by the human eye.
-Arduino Mega2560 has 5 timers (timer3, timer4 which are 16bit).
+Internally, timer0 is used for the millis() function. It is not recommended to use it.
+Timer1 and Timer2 are available for custom applications.
+This example uses timer1 because timer2 is very short and its full cycle can't be noticed by the human eye.
+Arduino Mega2560 has a total of 5 timers (timer3, timer4 which are 16bit).
 
 ## Service Info
 
