@@ -4,7 +4,7 @@ SoftwareSerial mySerial(10, 11); // RX, TX
 
 void setup()
 {
-  mySerial.begin(115200);
+  mySerial.begin(38400);
 }
 
 char my_array[4] = {
@@ -17,7 +17,7 @@ char my_array[4] = {
 void loop()
 {
   //mySerial.print(B10100100); // sending one byte doesn't work well
-  mySerial.print(my_array);
+  //mySerial.print(my_array);
   //mySerial.print("ALMINKO");
   
   delay(500);
